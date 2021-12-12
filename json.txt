@@ -1,0 +1,142 @@
+SELECT u FROM User u WHERE u.name IN :names
+
+@Query("update User u set u.status = :status where u.name = :name")
+int updateUserSetStatusForName(@Param("status") Integer status, 
+  @Param("name") String name);
+
+
+{
+    "driverId": 4,
+    "licenceNo": "taxi4",
+    "cab": {
+        "cabId": 2,
+        "carType": "bus",
+        "perKmRate": 80.0
+    },
+    "rating": 8.0
+}
+
+
+{
+    "tripBookingId": 6,
+    "customerId": 1,
+    "driver": 
+    {
+    "licenceNo": "taxi5",
+    "cab": {
+        
+        "carType": "bike",
+        "perKmRate": 80.0
+    },
+    "rating": 8.0
+},
+
+
+    "fromLocation": "mumbai",
+    "toLocation": "pune",
+    "fromDateTime":"2007-12-03T10:15:30",
+    "toDateTime": "2007-12-03T10:15:30",
+    "status":true,
+    "distanceInKm": 10.0,
+    "bill": 900.0
+}
+{
+    "tripBookingId": 6,
+    "customerId": 1,
+    "driver": 
+    {
+    "licenceNo": "taxi5",
+    "cab": {
+        
+        "carType": "bike",
+        "perKmRate": 80.0
+    },
+    "rating": 8.0
+},
+    "fromLocation": "mumbai",
+    "toLocation": "pune",
+    "fromDateTime":"2007-12-03T10:15:30",
+    "toDateTime": "2007-12-03T10:15:30",
+    "status":true,
+    "distanceInKm": 10.0,
+    "bill": 900.0
+}
+
+{
+   
+    "licenceNo": "taxi4",
+    "cab": {
+        "carType": "bus",
+        "perKmRate": 80.0
+    },
+    "rating": 8.0
+}
+
+
+{
+    "driverId": 16,
+    "licenceNo": "taxi",
+    "cab": {
+        "cabId": 6,
+        "carType": "bus",
+        "perKmRate": 80.0
+    },
+    "rating": 8.0
+}
+
+------------------
+
+insert into driver values(101,'mumbai','a@gmail.com','7878','123','ankita','a19',8,1)
+
+
+driver
+ {
+        "username": "ankita",
+        "password": "123",
+        "address": "mumbai",
+        "mobileNumber": "7878",
+        "email": "a@gmail.com",
+        "driverId": 101,
+        "licenceNo": "a19",
+        "cab": {
+            "cabId": 1,
+            "carType": "taxi",
+            "perKmRate": 30.0
+        },
+        "rating": 8.0
+    }
+
+ {
+        "username": "riya",
+        "password": "123",
+        "address": "pune",
+        "mobileNumber": "787998",
+        "email": "a@gmail.com",
+        "driverId": 102,
+        "licenceNo": "a19",
+        "cab": {
+            "cabId": 2,
+            "carType": "bike",
+            "perKmRate": 30.0
+        },
+        "rating": 7.0
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
