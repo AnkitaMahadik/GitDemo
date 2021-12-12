@@ -1,3 +1,4 @@
+query for name
 SELECT u FROM User u WHERE u.name IN :names
 
 @Query("update User u set u.status = :status where u.name = :name")
